@@ -102,40 +102,37 @@
 
         /*////// RESET STYLES //////*/
         td[id="headerContainer"], td[id="introContainer"], td[id="bodyCopyContainer"], td[id="bottomCopyContainer"], td[id="footerContainer"]{padding-right:10px !important; padding-left:10px !important;}
-        table[id="introductionBlock"], table[id="callToActionBlock"], table[id="eventBlock"], table[id="merchandiseBlock"], table[id="footerBlock"]{max-width:480px !important; width:100% !important;}
         
         /*////// Mobile to render at full width //////*/
         body{width:100% !important; min-width:100% !important;}
         
         /*////// General Mobile Styles //////*/
         h1{font-size:34px !important;}
-        h2{font-size:28px !important;}
-        h3{font-size:26px !important;}
-        h4{font-size:24px !important;}
-        
-        img{height:auto !important; max-width:520px !important; width:100% !important;}
+        h2, h3{font-size:22px !important;}
+        h4{font-size:18px !important;}
         
         table[class="introHeader"]{width:100%!important;}
+        img[class="twcLogo"]{margin: 0 auto; height:auto !important; max-width:520px !important; width:100% !important;}
         td[class="introText"] {padding: 30px 40px 0px 40px; text-align: center; display:block !important; }
         td[class="introImage"]{display:block !important;}
         td[class="headerTop"]{padding: 5px 0 5px 0 !important;}
+        img[class="tvImage"]{height:auto !important; max-width:520px !important; width:100% !important;}
         
+        table[class="bodyCopyDetails"]{width:90% !important; padding:10px 20px !important;}
         table[class="bodyCopyIntro"]{width:100% !important;}
-        td[class="bodyCopyHeader"]{padding:20px 50px !important; text-align: center;}
-        td[class="bodyCopyText"]{padding:10px 15px !important; text-align: center;}
-        table[class="bodyCopyDetails"]{width:100% !important; padding:10px 20px !important;}
-        
-        td[class="callToActionContent"]{text-align:left !important;}
-        table[class="callToActionButton"]{width:100% !important;}
-        
-        td[id="eventBlockCell"]{padding-right:20px !important; padding-left:20px !important;}
-        table[class="eventBlockCalendar"]{width:100px !important;}
-        
-        td[id="merchandiseBlockCell"]{padding-right:20px !important; padding-left:20px !important;}
-        td[class="merchandiseBlockHeading"] h2{text-align:center !important;}
-        td[class="merchandiseBlockLeftColumn"], td[class="merchandiseBlockRightColumn"]{display:block !important; padding:0 0 20px 0 !important; width:100% !important;}
+        td[class="bodyCopyHeader"]{width: 70% !important; text-align: center;}
+        td[class="bodyCopyText"]{padding: 20px 0!important; text-align: center;}
 
+        table[class="bottomCopy"]{width:90% !important; padding:10px 20px !important;}
+        td[class="bottomDetailCells"]{display:block !important;}
+        td[class="bottomCopyText"]{padding: 20px 0!important; text-align: center;}
+        td[class="startWatching"]{width: 100%; display:block !important; align:center; text-align: center;}
+
+        td[class="thankYou"]{padding: 5px 60px 5px 60px; text-align: center;}
         td[class="footerContent"]{font-size:10px !important;}
+        td[class="button"]{width: 100%; display:block !important;}
+        table[class="social"]{width: 90%; margin: 0 auto;}
+
       }
       </style>
   </head>
@@ -190,13 +187,13 @@
                 <td align="center" valign="top" id="bodyCopyContainer" style="padding: 4% 0;">
                   <table class="bodyCopy">
                     <tr>
-                      <td>
+                      <td class="bodyCopyHeader">
                         <h2><strong>START OVER</strong><sup>&reg;</sup> AND <strong>CALLER ID</strong> ON TV ARE NOW AVAILABLE.
                         </h2>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td class="bodyCopyText">
                         <p>We’re excited to announce new features that will change the way you watch TV, as part of your current subscription
                         </p>
                       </td>
@@ -227,28 +224,28 @@
               <!--/////// Bottom Copy Block ///////-->
               <tr>
                 <td align="center" valign="top" id="bottomCopyContainer" style="padding: 4% 0;">
-                  <table align="center" class="bottomCopyIntro">
-                    <tr >
-                      <td style="padding: 5% 0;">
+                  <table align="center" class="bottomCopy">
+                    <tr>
+                      <td class="bottomCopyText" style="padding: 5% 0;">
                         <p>We also hope you’ve been enjoying <strong>HD</strong> and <strong>On Demand</strong>. With <strong>HD</strong>, you can immerse yourself in the best picture and sound on over 110 channels. And <strong>On Demand</strong> gives you access to nearly 20,000 hit movies, programs and popular TV series—including full seasons and over 1,400 kids shows—with more coming soon. 
                         </p>
                       </td>
                     </tr>
                   </table>
-                  <table align="center" class="bottomCopyDetails" >
+                  <table class="bottomCopy" align="center">
                     <tr>
-                      <td width="50%" align= "center">
-                        <img height="280" alt="tv" src="img/tv_bottom.png"/>
+                      <td class="bottomDetailCells" width="50%" align= "center">
+                        <img class="bottomCopyImage"height="280" alt="tv" src="img/tv_bottom.png"/>
                       </td>
-                      <td>
+                      <td class="bottomDetailCells">
                         <table>
                           <tr>
-                            <td style="color: #0064a5;">
+                            <td class="bottomDetailCells"style="color: #0064a5;">
                               <p><strong>It’s easier than ever to start enjoying the entire On Demand library:</strong>
                               </p>
                             </td>
                           </tr>
-                          <table>
+                          <table class="bottomDetailCells">
                             <tr>
                               <td style="padding: 2%;">
                                 <img height="30" alt="1" src="img/1.png"/>
@@ -259,7 +256,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td style="padding: 2%;">
+                              <td  style="padding: 2%;">
                                 <img height="30" alt="2" src="img/2.png"/>
                               </td>
                               <td style="padding: 2%;">
@@ -268,26 +265,20 @@
                               </td>
                             </tr>
                           </table>
-                          <table>
+                          <table class="startWatching">
                             <tr>
-                              <td style="padding: 2%;">
+                              <td class="startWatching" style="padding: 2%;">
                                 <p style="color: #0064a5;"><strong>Start watching now.</strong>
                                 </p>
                               </td>
-                              <td style="padding: 2%;">
-                                &nbsp;
-                              </td>
                             </tr>
                             <tr>
-                              <td id="gradient" style="padding: 8px 20px 10px 40px; border-radius: 5px; text-align: center;">
+                              <td class="startWatching" id="gradient" style="padding: 8px 20px 10px 40px; border-radius: 5px; text-align: center;">
                                 <a href="https://www.timewarnercable.com/en/residential.html">
                                   <h3>Learn More &nbsp; &gt;
                                   </h3>
                                 </a>
-                              </td>
-                              <td>
-                                &nbsp;
-                              </td>
+                              </td>   
                             </tr>
                           </table>
                         </table>
@@ -302,7 +293,7 @@
                   <!-- /////// Thank You Bar ///////-->
                   <table width="100%">
                     <tr height="70px">
-                      <td width="100%" id="gradient" style= "font-size: 1em; text-align: center;"> 
+                      <td class="thankYou" width="100%" id="gradient" style= "font-size: 1em; text-align: center;">
                         <h3>Thank you for being a valued Time Warner Cable customer.
                         </h3>
                       </td>
@@ -343,16 +334,16 @@
                   <!--/////// Social Icons ///////-->
                   <table class="social" style="margin: 2% 0;">
                     <tr>
-                      <td>
+                      <td align= "center">
                         <img alt="Facebook" src="img/facebook.png"/>  
                       </td>
-                      <td>
+                      <td align= "center">
                         <img alt="Twitter" src="img/twitter.png"/>  
                       </td>
-                      <td>
+                      <td align= "center">
                         <img alt="YouTube" src="img/youtube.png"/>  
                       </td>
-                      <td>
+                      <td align= "center">
                         <img alt="Phone" src="img/phone.png"/>  
                       </td>
                     </tr>
